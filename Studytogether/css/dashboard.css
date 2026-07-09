@@ -1,0 +1,172 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+body{
+    margin:0;
+    min-height:100vh;
+
+    background:
+        linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.35)),
+        url("../assests/images/Dashboard.jpg");
+
+    background-size:cover;
+    background-position:center;
+}
+.welcome{
+    font-size: 48px;
+    color: white;
+
+    opacity: 0;
+    transform: translateY(50px);
+
+    animation: slideUp 1s ease forwards;
+}
+.navbar{
+     width:95%;
+    height:75px;
+
+    margin:20px auto;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:0 40px;
+
+    background:rgba(255,255,255,.15);
+
+    backdrop-filter:blur(15px);
+
+    border-radius:20px;
+
+    border:1px solid rgba(255,255,255,.25);
+
+    box-shadow:0 10px 30px rgba(0,0,0,.2);
+
+}
+@keyframes slideUp{
+    from{
+        opacity: 0;
+        transform: translateY(50px);
+    }
+
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.logo{
+    font-family:'Courier New', Courier, monospace;
+    font-size:28px;
+    color:antiquewhite
+}
+.link{
+
+    display:flex;
+    gap:35px;
+
+    list-style:none;
+}
+.link a{
+
+    text-decoration:none;
+
+    color:antiquewhite;
+  font-family:'Courier New', Courier, monospace;
+    font-size:18px;
+
+    transition:.3s;
+}
+.link a:hover{
+
+    color:#FFD54F;
+
+}
+h1{
+     font-family:'Courier New', Courier, monospace;
+    font-size:50px;
+    color:antiquewhite;
+    text-align: center;
+
+
+}
+p{
+    font-family:'Courier New', Courier, monospace;
+    font-size:50px;
+    color:antiquewhite;
+    text-align: center;
+
+
+}
+#Music{
+ background-color:rgba(0,0,0,.2);
+ padding: 5px;
+}
+h1{
+    animation: fade 3s infinite;
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+#clogo{
+     width: 25px;
+    height: 25px;
+    background-color:rgba(0,0,0,.2) ;
+}
+.Stat{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+
+.card{
+    width: 250px;
+    height: 170px;
+
+    padding: 25px;
+
+    background: rgba(255,255,255,0.12);
+    backdrop-filter: blur(12px);
+
+    border-radius: 20px;
+    border: 1px solid rgba(255,255,255,0.2);
+
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+
+    transition: 0.3s;
+}
+
+.card:hover{
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.4);
+}
+
+.card h3{
+    color: antiquewhite;
+    font-size: 32px;
+   
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+}
+
+.card p{
+    color: antiquewhite;
+    font-size: 28px;
+    
+      font-family: 'Courier New', Courier, monospace;
+}

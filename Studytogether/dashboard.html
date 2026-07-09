@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard_Study Together</title>
+     <link rel="stylesheet" href="css/dashboard.css">
+</head>
+<body>
+  <audio id="bgMusic" loop>
+    <source src="assests/music/still-with-you.mp3" type="audio/mpeg">
+</audio>
+
+<button id="Music" onclick="toggleMusic()">🎵 </button>
+
+<script>
+const music = document.getElementById("bgMusic");
+const button = document.getElementById("musicBtn");
+
+music.volume = 0.2;
+
+function toggleMusic() {
+    if (music.paused) {
+        music.play();
+     
+    } else {
+        music.pause();
+        
+    }
+}
+</script>
+
+</a></button>
+<nav class ="navbar">
+    <div class="logo">StudyTogether</div>
+    <ul class="link">
+        <li><a href="dashboard.html">DashBoard</a></li>
+        <li><a href="room.html">Rooms</a></li>
+        <li><a href="https://calendar.google.com/calendar/u/0/r?pli=1">Calender</a></li>
+        <li><a href="pomodoro.html">Pomodoro </a></li>
+        <li><a href="">Profile</a></li>
+    </ul>
+</nav>
+<br>
+<br>
+<h1>Let's Study Together!</h1>
+<p>Stay focused, stay consistent, and achieve more together.</p>
+<div class="Stat">
+    <div class="card">
+        <h3>Study Hours</h3>
+        <p>35 Hours</p>
+    </div>
+    <div class="card">
+        <h3>Current Streaks</h3>
+        <p>15 Days</p>
+    </div>
+    <div class="card">
+        <h3>Rank</h3>
+        <p>#24</p>
+    </div>
+</div>
+
+
+
+</body>
+
+
+</html>

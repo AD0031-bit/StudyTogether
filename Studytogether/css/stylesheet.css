@@ -1,0 +1,18 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    background:#412C58;
+}
+
+
+ #loader{
+    position:fixed;
+    inset:0;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    transition:opacity .8s ease;
+    z-index:9999;
+}
